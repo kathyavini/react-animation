@@ -1,0 +1,44 @@
+:root {
+  --main: '#282c34';
+  --contrast: #d97093;
+  --secondaryContrast: #663399;
+  --mainFont: 'Josefin Sans', sans-serif;
+  --secondaryFont: 'Yeseva One', serif;
+  --respL: clamp(2rem, 1rem + 4vw, 4rem);
+  --respXL: clamp(3rem, 2rem + 4vw, 5rem);
+  --rotateY: 0;
+  --rotateX: 0;
+}
+
+* {
+  /* outline: 1px solid salmon; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This is required for scroll snapping */
+/* And so it making each scroll container 100vh */
+html, body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+
+h1 {
+  font-family: var(--secondaryFont);
+  font-size: var(--respXL);
+}
+
+p {
+  font-family: var(--mainFont);
+  font-size: var(--respL);
+}
+
+
