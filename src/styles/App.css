@@ -8,6 +8,8 @@
   --respXL: clamp(3rem, 2rem + 4vw, 5rem);
   --rotateY: 0;
   --rotateX: 0;
+  --pigCornX: 0;
+  --pigCornY: 0;
 }
 
 * {
@@ -21,8 +23,9 @@
 /* And so it making each scroll container 100vh */
 html, body {
   overflow-x: hidden;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: papayawhip;
 }
 
 #root{
@@ -34,11 +37,21 @@ html, body {
 h1 {
   font-family: var(--secondaryFont);
   font-size: var(--respXL);
+  color: palevioletred;
+}
+
+h2 {
+  font-family: var(--secondaryFont);
+  font-size: var(--respL);
+  color: palevioletred;
+  text-transform: uppercase;
 }
 
 p {
   font-family: var(--mainFont);
   font-size: var(--respL);
+  margin-block: 2rem;
+  color: rebeccapurple;
 }
 
 

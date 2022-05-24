@@ -9,7 +9,7 @@ const StyledSvg = styled.svg`
   transform-style: preserve-3d;
 `;
 
-export function UnicornLeft() {
+export function UnicornLeft({ yLeft }) {
   const svgVariants = {
     start: {
       opacity: 0,
@@ -34,13 +34,14 @@ export function UnicornLeft() {
       viewBox="0 0 1440 1440"
     >
       <motion.path
+        style={{ opacity: yLeft }}
         id="Left Unicorn"
         fill="none"
         stroke="black"
         strokeWidth="5"
-        variants={svgVariants}
-        initial="start"
-        animate="finished"
+        // variants={svgVariants}
+        // initial="start"
+        // animate="finished"
         d="M 393.00,280.00
                    C 393.00,280.00 401.71,274.37 401.71,274.37
                      411.56,266.22 419.48,253.35 426.78,243.00

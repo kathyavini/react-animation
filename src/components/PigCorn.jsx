@@ -5,24 +5,26 @@ import styled from 'styled-components';
 const StyledSvg = styled.svg`
   bottom: 20%;
   left: 7%;
+  position: fixed;
+  /* top: 20%; */
   transform: translateX(-10px) translateZ(100px);
   transform-style: preserve-3d;
 `;
 
-export function PigCorn() {
+export function PigCorn({ yPig }) {
   const svgVariants = {
     start: {
-      opacity: 0,
-      pathLength: 0,
+      // opacity: 0,
+      // pathLength: 0,
     },
     finished: {
-      opacity: 1,
-      pathLength: 1,
-      transition: {
-        duration: 4,
-        delay: 4.5,
-        ease: 'easeInOut',
-      },
+      // opacity: 1,
+      // pathLength: 1,
+      // transition: {
+      //   duration: 4,
+      //   delay: 4.5,
+      //   ease: 'easeInOut',
+      // },
     },
   };
 
@@ -34,13 +36,14 @@ export function PigCorn() {
       viewBox="0 0 1440 1440"
     >
       <motion.path
+        style={{ pathLength: yPig }}
         id="Pig Unicorn"
         fill="none"
         stroke="black"
         strokeWidth="6"
-        variants={svgVariants}
-        initial="start"
-        animate="finished"
+        // variants={svgVariants}
+        // initial="start"
+        // animate="finished"
         d="M 795.00,1440.00
            C 784.18,1439.98 786.30,1438.08 778.95,1427.17
              778.95,1427.17 771.91,1418.00 771.91,1418.00
