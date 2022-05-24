@@ -1,5 +1,4 @@
-import { motion, useViewportScroll, useTransform } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 const StyledSvg = styled.svg`

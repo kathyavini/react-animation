@@ -1,15 +1,20 @@
 :root {
-  --main: '#282c34';
-  --contrast: #d97093;
-  --secondaryContrast: #663399;
+  --main: palevioletred;
+  --contrast: rebeccapurple;
+  --secondaryContrast: mediumseagreen;
+  --background: papayawhip;
+  --white: white;
+  --black: #282c34;
   --mainFont: 'Josefin Sans', sans-serif;
   --secondaryFont: 'Yeseva One', serif;
   --respL: clamp(2rem, 1rem + 4vw, 4rem);
   --respXL: clamp(3rem, 2rem + 4vw, 5rem);
   --rotateY: 0;
   --rotateX: 0;
-  --pigCornX: 0;
-  --pigCornY: 0;
+  --emilyX: 0;
+  --emilyY: 0;
+  --emilySmX: 0;
+  --emilySmY: 0;
 }
 
 * {
@@ -25,7 +30,7 @@ html, body {
   overflow-x: hidden;
   min-width: 100vw;
   min-height: 100vh;
-  background-color: papayawhip;
+  /* background-color: var(--background); */
 }
 
 #root{
@@ -37,13 +42,13 @@ html, body {
 h1 {
   font-family: var(--secondaryFont);
   font-size: var(--respXL);
-  color: palevioletred;
+  color: var(--black);
 }
 
 h2 {
   font-family: var(--secondaryFont);
   font-size: var(--respL);
-  color: palevioletred;
+  color: var(--main);
   text-transform: uppercase;
 }
 
@@ -51,7 +56,7 @@ p {
   font-family: var(--mainFont);
   font-size: var(--respL);
   margin-block: 2rem;
-  color: rebeccapurple;
+  color: var(--main);
 }
 
 
