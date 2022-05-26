@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/react-animation/static/css/main.3de129de.css",
-    "main.js": "/react-animation/static/js/main.357ac526.js",
-    "static/media/emilyback.png": "/react-animation/static/media/emilyback.e61fea3ef67f1d26f5f7.png",
+    "main.js": "/react-animation/static/js/main.abd1346b.js",
+    "static/media/emily.png": "/react-animation/static/media/emily.597e1e69ba1d7ece6cb5.png",
     "static/media/emily2.png": "/react-animation/static/media/emily2.18c9465a12fa217d4212.png",
     "static/media/emily3.png": "/react-animation/static/media/emily3.e4b1b8d1770ca4e802e7.png",
     "static/media/emily1.png": "/react-animation/static/media/emily1.28e0263a421a006f5ba7.png",
     "static/media/emily4.png": "/react-animation/static/media/emily4.3d73438bb0fdb25b675a.png",
+    "static/media/emily.webp": "/react-animation/static/media/emily.2e510fb4e880ad78aeb4.webp",
     "index.html": "/react-animation/index.html",
     "main.3de129de.css.map": "/react-animation/static/css/main.3de129de.css.map",
-    "main.357ac526.js.map": "/react-animation/static/js/main.357ac526.js.map"
+    "main.abd1346b.js.map": "/react-animation/static/js/main.abd1346b.js.map"
   },
   "entrypoints": [
     "static/css/main.3de129de.css",
-    "static/js/main.357ac526.js"
+    "static/js/main.abd1346b.js"
   ]
 }
