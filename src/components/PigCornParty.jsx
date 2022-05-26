@@ -2,7 +2,7 @@ import { PigCorn } from './PigCorn';
 import { UnicornLeft } from './UnicornLeft';
 import { UnicornRight } from './UnicornRight';
 import styled from 'styled-components';
-import { motion, useViewportScroll, useTransform } from 'framer-motion';
+import { useViewportScroll, useTransform } from 'framer-motion';
 
 const Container = styled.div`
   max-width: 600px;

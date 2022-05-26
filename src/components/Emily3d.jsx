@@ -70,6 +70,7 @@ export function Emily3d() {
     let xAxis = window.innerWidth / 2 - event.pageX;
     let yAxis = window.innerHeight / 2 - event.pageY;
 
+    // This seems to perform the same as using state and styled component props.
     document.body.style.setProperty('--emilyY', `${xAxis / 10}deg`);
     document.body.style.setProperty('--emilyX', `${yAxis / 20}deg`);
 
@@ -80,22 +81,36 @@ export function Emily3d() {
     <Container>
       <Container3d onPointerMove={handleMove}>
         {/* <Container3d> */}
-        <motion.img src={require('../assets/emilyback.png')} />
+        <picture>
+          <source srcSet={require('../assets/emily.webp')} type="image/webp" />
+          <img
+            alt="A watercolor painting of flowers"
+            src={require('../assets/emily.png')}
+            type="image/png"
+          />
+        </picture>
+
         <motion.img
           style={{ z: 15, y: falling, rotate: rotating }}
           src={require('../assets/emily1.png')}
+          type="image/png"
         />
         <motion.img
           style={{ z: 10, y: fast }}
           src={require('../assets/emily2.png')}
+          type="image/png"
         />
+
         <motion.img
           style={{ z: 7, y: middle }}
           src={require('../assets/emily3.png')}
+          type="image/png"
         />
+
         <motion.img
           style={{ z: 2, y: slow }}
           src={require('../assets/emily4.png')}
+          type="image/png"
         />
       </Container3d>
     </Container>

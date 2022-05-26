@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import styled from 'styled-components';
-import { PigCornParty } from './PigCornParty';
 
 const Container = styled.div`
   display: flex;

@@ -22,15 +22,17 @@ const Container = styled(ScrollContainer)`
 `;
 
 const StyledButton = styled(motion.button)`
-  font-family: var(--mainFont);
+  width: fit-content;
+
+  padding: 0.7rem 2rem;
   background: ${(props) => (props.filled ? 'var(--main)' : 'transparent')};
   color: ${(props) => (props.filled ? 'var(--white)' : 'var(--main)')};
   border: 2px solid var(--main);
   border-radius: 10px;
 
+  font-family: var(--mainFont);
   font-size: 1rem;
   text-transform: uppercase;
-  padding: 0.7rem 2rem;
 
   &:hover {
     background: ${(props) =>

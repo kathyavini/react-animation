@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, useTransform } from 'framer-motion';
 import styled from 'styled-components';
 
 const StyledSvg = styled.svg`
@@ -11,21 +11,26 @@ const StyledSvg = styled.svg`
 `;
 
 export function PigCorn({ yPig }) {
-  const svgVariants = {
-    start: {
-      // opacity: 0,
-      // pathLength: 0,
-    },
-    finished: {
-      // opacity: 1,
-      // pathLength: 1,
-      // transition: {
-      //   duration: 4,
-      //   delay: 4.5,
-      //   ease: 'easeInOut',
-      // },
-    },
-  };
+  // const svgVariants = {
+  //   start: {
+  //     opacity: 0,
+  //     // pathLength: 0,
+  //   },
+  //   finished: {
+  //     opacity: 1,
+  //     // pathLength: 1,
+  //     transition: {
+  //       duration: 1,
+  //       // delay: 4.5,
+  //       ease: 'easeInOut',
+  //     },
+  //   },
+  // };
+
+  // A hack for Safari 14.1.2 not being able to start pathLength at true zero for some reason??! (Begins with array of initial dots). However, not sure if using useTransform also is making the ghosting on scroll in Safari worse. Yuck Safari.
+  const visAfterScroll = useTransform(yPig, [0, 0.2], [0, 1], {
+    clamp: false,
+  });
 
   return (
     <StyledSvg
@@ -35,7 +40,8 @@ export function PigCorn({ yPig }) {
       viewBox="0 0 1440 1440"
     >
       <motion.path
-        style={{ pathLength: yPig }}
+        style={{ pathLength: yPig, opacity: visAfterScroll }}
+        // style={{ pathLength: yPig }}
         id="Pig Unicorn"
         fill="none"
         stroke="black"

@@ -9,21 +9,21 @@ const StyledSvg = styled.svg`
 `;
 
 export function UnicornRight({ yRight }) {
-  const svgVariants = {
-    start: {
-      opacity: 0,
-      //   pathLength: 0,
-    },
-    finished: {
-      opacity: 1,
-      //   pathLength: 1,
-      transition: {
-        duration: 2,
-        delay: 3,
-        ease: 'easeIn',
-      },
-    },
-  };
+  // const svgVariants = {
+  //   start: {
+  //     opacity: 0,
+  //     //   pathLength: 0,
+  //   },
+  //   finished: {
+  //     opacity: 1,
+  //     //   pathLength: 1,
+  //     transition: {
+  //       duration: 2,
+  //       delay: 3,
+  //       ease: 'easeIn',
+  //     },
+  //   },
+  // };
 
   return (
     <StyledSvg

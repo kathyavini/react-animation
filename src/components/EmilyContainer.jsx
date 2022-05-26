@@ -25,7 +25,7 @@ export function EmilyContainer() {
   return (
     <ScrollContainer>
       <Emily3d />
-      <p>(rotate me!)</p>
+      <p>(wiggle me!)</p>
       <ScrollMessage style={{ opacity: y2 }}>...or scroll</ScrollMessage>
       <Spacer />
       <Spacer />
